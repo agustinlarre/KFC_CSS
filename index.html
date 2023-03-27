@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Estilos/Estilos.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> 
+    <title>OBLIGATORIO</title>
+</head>
+<body>
+    <!-- ETIQUETAS SEMÁNTICAS -->
+    <header>
+        <!-- LOGO -->
+        <figure>
+            <img src="Estilos/Imagenes/logoKFC.png" alt="FOTO DEL LOGO">
+        </figure>
+        <!-- MENÚ -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#menu">Menu</a>
+                </li><li>
+                    <a href="#fotosSec4">Fotos</a>
+                </li><li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- SECCION 1: FOTO DE FONDO -->
+        <section id="titulo">
+            <figure>
+                <h1>Bienvenido a KFC</h1>
+                <p>Para chuparse los dedos!</p>
+                <a href="#">RESERVAR</a>
+            </figure>
+        </section>
+        <!-- SECCION 2: CATEGORÍAS -->
+        <section id="fotosCat">
+            <article>
+                <figure>
+                    <img src="Estilos/Imagenes/cat1.jpeg" alt="imgCat1">
+                </figure>
+                <h3>Bucket</h3>
+            </article>
+            <article>
+                <figure>
+                    <img src="Estilos/Imagenes/cat2.jpeg" alt="imgCat2">
+                </figure>
+                <h3>Sandwich</h3>
+            </article>
+            <article>
+                <figure>
+                    <img src="Estilos/Imagenes/cat3.jpeg" alt="imgCat3">
+                </figure>
+                <h3>Combos</h3>
+            </article>
+            <article>
+                <figure>
+                    <img src="Estilos/Imagenes/cat4.png" alt="imgCat4">
+                </figure>
+                <h3>DIPems'</h3>
+            </article>
+            <article>
+                <figure>
+                    <img src="Estilos/Imagenes/cat5.jpeg" alt="imgCat5">
+                </figure>
+                <h3>Parfait cups</h3>
+            </article>
+            <article>
+                <figure>
+                    <img src="Estilos/Imagenes/cat6.jpeg" alt="imgCat6">
+                </figure>
+                <h3>Biscuits</h3>
+            </article>
+            <article>
+                <figure>
+                    <img src="Estilos/Imagenes/cat7.jpeg" alt="imgCat7">
+                </figure>
+                <h3>Cookies</h3>
+            </article>
+            <article>
+                <figure>
+                    <img src="Estilos/Imagenes/cat8.jpeg" alt="imgCat8">
+                </figure>
+                <h3>Sundae</h3>
+            </article>
+        </section>
+        <!-- SECCION 3: MENÚ -->
+        <section id="menu">
+            <h2>Menú</h2>
+            <article id="ar1">
+                <figure>
+                    <img src="Estilos/Imagenes/combo1.png" alt="imgFig1">
+                </figure>
+                <h2>Combo 1</h2>
+                <p>Wings Bucket, Dips de salsa, Nuggets & Fries </p>
+            </article>
+            <article id="ar2">
+                <figure>
+                    <img src="Estilos/Imagenes/combo2.jpeg" alt="imgFig2">
+                </figure>
+                <h2>Combo 2</h2>
+                <p>BBC Burger, Wrap, Wings Bucket & fries</p>
+            </article>
+            <article id="ar3">
+                <figure>
+                    <img src="Estilos/Imagenes/combo3.jpeg" alt="imgFig3">
+                </figure>
+                <h2>Combo 3</h2>
+                <p>TakeAway - Chicken wings & fries</p>
+            </article>
+
+            <!--APARTADO-->
+            <aside>
+                <h2>Más vendidos</h2>
+                <ul>
+                    <li>Combo 3</li>
+                    <li>Combo 5</li>
+                    <li>Combo 1</li>
+                    <li>Combo 4</li>
+                    <li>Combo 2</li>
+                    <li>Combo 6</li>
+                </ul>
+            </aside>
+        </section>
+        <!-- SECCION 4: FOTOS -->
+        <section id="fotosSec4">
+            <h2>Fotos</h2>
+            <figure id="imagenGrande1">
+                <img src="Estilos/Imagenes/cat1.jpeg" alt="">
+            </figure>
+            <figure id="imagenChica1">
+                <img src="Estilos/Imagenes/cat2.jpeg" alt="">
+            </figure>
+            <figure id="imagenChica2">
+                <img src="Estilos/Imagenes/cat6.jpeg" alt="">
+            </figure>
+            <figure id="imagenGrande2">
+                <img src="Estilos/Imagenes/cat8.jpeg" alt="">
+            </figure>
+        </section>
+        <!-- SECCION 5: CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#">
+                <input type="text" placeholder="Nombre Completo *" required>
+                <input type="text" placeholder="E-mail *" required>
+                <select name="Pais" id="selPais" required>
+                    <option value="" disabled selected>Selecciona tu país</option>
+                    <option value="uru">Uruguay</option>
+                    <option value="arg">Argentina</option>
+                    <option value="bra">Brasil</option>
+                </select>
+                <textarea name="txtAreaContacto" id="txtArea" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                <input type="submit" id="btnSubmit" value="ENVIAR">
+            </form>
+            <figure>
+                <img src="Estilos/Imagenes/kfcContactoImagen.jpeg" alt="">
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <section id="redesSociales">
+            <!-- SEGUINOS EN -->
+            <h2>Seguinos en...</h2>
+            <!-- MENÚ REDES SOCIALES -->
+            <nav id="logoInstagram">
+                <a href="#"><img src="Estilos/Imagenes/instagram.png" alt=""></a>
+            </nav>
+            <nav id="logoTwitter">
+                <a href="#"><img src="Estilos/Imagenes/twitter.png" alt=""></a>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>

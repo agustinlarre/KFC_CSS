@@ -1,0 +1,427 @@
+html{
+    scroll-behavior: smooth; /* Suavizado en el scrolling al hacer click sobre un hipervínculo */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --miEstiloh2: 'Bungee Shade', cursive;
+    --miEstiloh1: 'Bungee', cursive;
+}
+
+header{
+    margin: 0 auto;
+    background-color: beige;
+    background-size: contain;
+    background-image: url(Imagenes/headerPicKFC.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header figure{
+    width: 600px;
+    height: 125px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+header figure img{
+    width: 100px;
+    height: 100px;
+}
+
+header nav{
+    width: 600px;
+    height: 125px;
+    display:flex;
+    align-items:center;
+    justify-content: end;
+}
+
+header nav ul{
+    list-style-type: none;
+    text-align: right;
+}
+
+header nav ul li{
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: 1px solid red;
+
+    border-radius: 10px;
+
+    display: inline;
+    display: block;
+}
+
+header nav ul li a:hover{
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+}
+
+section figure img{
+    background-size: contain;
+    background-position: center center;
+}
+
+main{
+    background-color: beige;
+    margin: 0 auto;
+}
+
+p, li{
+    font-size: 20px;
+    font-style:oblique;
+}
+
+h1{
+    font-family: var(--miEstiloh1);
+}
+
+h2{
+    font-family: var(--miEstiloh2);
+}
+
+a, input[type='submit']{
+    transition: all 1s;
+}
+
+#titulo{
+    width: auto;
+    height: auto;
+    background-image: url(Imagenes/titleImage.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+}
+
+#titulo h1{
+    font-size: 50px;
+    width: 1200px;
+    color: beige;
+    margin: 20px;
+}
+
+#titulo p{
+    width: 1200px;
+    font-size: 25px;
+    color: beige;
+    margin: 20px;
+}
+
+#titulo a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: grey;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    letter-spacing: 5px;
+    border: 1px solid white;
+    margin: 15px;
+}
+
+#titulo a:hover{
+    background-color: red;
+    color: white;
+    border: 1px solid white
+}
+
+#fotosCat{
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fotosCat article{
+    width: 150px;
+    text-align: center;
+}
+
+#fotosCat article figure img{
+    border-radius: 50%;
+    width: 115px;
+    height: 115px;
+    margin: 5px;
+}
+
+#fotosCat article h3{
+    text-align: center;
+}
+
+#menu{
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+#menu>:first-child{
+    letter-spacing: 5px;
+    margin-top: 15px;
+    height: 50px;
+    grid-column: 1/5;
+}
+
+#menu article{
+    height: 350px;
+}
+
+#menu article figure{
+    height: 250px;
+}
+
+#ar1 figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#ar2 figure img{
+    grid-column: 2/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#ar3 figure img{
+    grid-column: 3/4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#menu article h2, p{
+    margin: 10px;
+    text-align: center;
+}
+
+#menu aside{
+    grid-column: 4/5;
+    height: 350px;
+}
+
+#menu aside ul{
+    display: inline-block;
+}
+
+#menu aside ul li{
+    list-style-position: inside;
+    margin: 20px 0;
+    list-style-image: url(Imagenes/fried-chicken.png);
+}
+
+#menu aside ul li:hover{
+    list-style-image: url(Imagenes/fried-chicken-2.png);
+    cursor: pointer;
+}
+
+#fotosSec4{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 375px);
+    grid-template-rows: 25px auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    justify-content: center;
+}
+
+#fotosSec4 h2{
+    grid-column: 1/4;
+    letter-spacing: 5px;
+}
+
+#imagenGrande1{
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+#imagenGrande1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#imagenGrande2{
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+
+#imagenGrande2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#imagenChica1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#imagenChica1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#imagenChica2{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#imagenChica2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#contacto{
+    background-image: url(Imagenes/footerImg.jpeg);
+    background-size: cover;
+    margin-top: 30px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 240px 450px 450px;
+    grid-column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacto h2{
+    grid-column: 1;
+    margin: 10px 0;
+    height: 300px;
+    letter-spacing: 5px;
+    text-align: end;
+    color: beige;
+}
+
+#contacto form{
+    grid-column: 2;
+    height: 300px;
+}
+
+#contacto input{
+    margin: 10px 0;
+    padding: 10px;
+    display: block;
+    width: 426px;
+    border: 2px solid black;
+    background-color: beige;
+}
+
+#contacto select{
+    background-color: beige;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 450px;
+    border: 2px solid black;
+    color: red;
+}
+
+#contacto textarea{
+    resize: none;
+    height: 70px;
+    padding: 10px;
+    width: 426px;
+    display: block;
+    border: 2px solid black;
+    background-color: beige;
+}
+
+::placeholder{
+    color: red;
+}
+
+#contacto input[type="submit"]{
+    width: 100px;
+    float: right;
+    color: white;
+    background-color: grey;
+}
+
+#contacto input[type="submit"]:hover{
+    background-color: beige;
+    color: black;
+    cursor: pointer;
+}
+
+#contacto figure{
+    grid-column: 3;
+    margin: 10px 0;
+    height: 275px;
+}
+
+#contacto figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+    margin: 0 auto;
+    background-color: beige;
+    padding: 20px;
+}
+
+#redesSociales{
+    display: grid;
+    grid-template-columns: repeat(2, 590px);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+#redesSociales h2{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+#logoInstagram{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: end;
+}
+
+#logoTwitter{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-content: start;
+}
+
+#redesSociales nav a:hover{
+    opacity: 0.30;
+}
